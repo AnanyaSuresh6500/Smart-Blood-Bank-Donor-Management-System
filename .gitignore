@@ -1,0 +1,17 @@
+# Node
+node_modules/
+.env
+*.env.local
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+model.joblib
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/settings.json
