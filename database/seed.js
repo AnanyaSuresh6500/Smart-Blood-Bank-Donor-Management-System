@@ -78,9 +78,9 @@ async function seedHospitals(client) {
       RETURNING hospital_id
     `, [
       name,
-      `HOSP-${faker.string.alphanumeric(8).toUpperCase()}`,
+      `HOSP-${String(i + 1).padStart(6, '0')}`,
       faker.internet.email().toLowerCase(),
-      faker.phone.number(),
+      `+1${faker.string.numeric(10)}`,
       faker.location.streetAddress(),
     ]);
 
@@ -148,7 +148,7 @@ async function seedDonors(client) {
       record.blood_type,
       dob.toISOString().split('T')[0],
       record.sex === 'M' ? 'male' : 'female',
-      faker.phone.number(),
+      `+1${faker.string.numeric(10)}`,
       faker.location.streetAddress(),
     ]);
 

@@ -1,0 +1,28 @@
+{
+  "name": "smart-blood-bank-donor-management-system",
+  "version": "1.0.0",
+  "description": "This is a healthcare application that uses ShaktiDB to manage donor records, blood inventory, donation history, and hospital blood requests. The system helps track blood availability, process requests efficiently, and generate reports on donation and demand trends, ensuring better management and utilization of blood resources.\r ## Services\r | Service | Port |\r |---|---|\r | Frontend | 3000 |\r | Backend | 5000 |\r | AI Service | 5001 |\r | ShaktiDB | 5432 |",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnanyaSuresh6500/Smart-Blood-Bank-Donor-Management-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/AnanyaSuresh6500/Smart-Blood-Bank-Donor-Management-System/issues"
+  },
+  "homepage": "https://github.com/AnanyaSuresh6500/Smart-Blood-Bank-Donor-Management-System#readme",
+  "dependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "bcrypt": "^6.0.0",
+    "csv-parse": "^6.2.1",
+    "dotenv": "^17.4.2",
+    "pg": "^8.21.0"
+  }
+}

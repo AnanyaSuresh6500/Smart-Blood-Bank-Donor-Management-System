@@ -1,10 +1,126 @@
 {
-  "A+":  ["A+", "A-", "O+", "O-"],
-  "A-":  ["A-", "O-"],
-  "B+":  ["B+", "B-", "O+", "O-"],
-  "B-":  ["B-", "O-"],
-  "AB+": ["AB+", "AB-", "A+", "A-", "B+", "B-", "O+", "O-"],
-  "AB-": ["AB-", "A-", "B-", "O-"],
-  "O+":  ["O+", "O-"],
-  "O-":  ["O-"]
+  "O+": [
+    {
+      "donor": "O+",
+      "level": "ideal"
+    },
+    {
+      "donor": "O-",
+      "level": "acceptable"
+    }
+  ],
+  "A+": [
+    {
+      "donor": "O+",
+      "level": "acceptable"
+    },
+    {
+      "donor": "O-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "A+",
+      "level": "ideal"
+    },
+    {
+      "donor": "A-",
+      "level": "acceptable"
+    }
+  ],
+  "B+": [
+    {
+      "donor": "O+",
+      "level": "acceptable"
+    },
+    {
+      "donor": "O-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "B+",
+      "level": "ideal"
+    },
+    {
+      "donor": "B-",
+      "level": "acceptable"
+    }
+  ],
+  "AB+": [
+    {
+      "donor": "O+",
+      "level": "acceptable"
+    },
+    {
+      "donor": "O-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "A+",
+      "level": "acceptable"
+    },
+    {
+      "donor": "A-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "B+",
+      "level": "acceptable"
+    },
+    {
+      "donor": "B-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "AB+",
+      "level": "ideal"
+    },
+    {
+      "donor": "AB-",
+      "level": "acceptable"
+    }
+  ],
+  "O-": [
+    {
+      "donor": "O-",
+      "level": "ideal"
+    }
+  ],
+  "A-": [
+    {
+      "donor": "O-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "A-",
+      "level": "ideal"
+    }
+  ],
+  "B-": [
+    {
+      "donor": "O-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "B-",
+      "level": "ideal"
+    }
+  ],
+  "AB-": [
+    {
+      "donor": "O-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "A-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "B-",
+      "level": "acceptable"
+    },
+    {
+      "donor": "AB-",
+      "level": "ideal"
+    }
+  ]
 }
