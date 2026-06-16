@@ -21,6 +21,9 @@ app.use(express.json());
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'Smart Blood Bank API' });
 });
+// Routes
+const authRoutes = require('./routes/auth');
+app.use('/auth', authRoutes);
 
 // Catch-all for any route that doesn't exist
 app.use((req, res) => {
