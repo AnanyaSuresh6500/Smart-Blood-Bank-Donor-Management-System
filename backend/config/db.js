@@ -12,15 +12,15 @@ const pool = new Pool({
 });
 
 // Fires every time a new connection is made to ShaktiDB
-pool.on('connect', () => console.log('✅ Connected to ShaktiDB'));
+pool.on('connect', () => console.log('Connected to ShaktiDB'));
 
 // Fires if the database connection unexpectedly drops
-pool.on('error', (err) => console.error('❌ ShaktiDB error:', err));
+pool.on('error', (err) => console.error('ShaktiDB error:', err));
 
 // Temporary connection test — confirms credentials work
 // We will remove this after verifying the connection
 pool.query('SELECT current_database(), current_user')
-  .then(res => console.log('✅ ShaktiDB connected:', res.rows[0]))
-  .catch(err => console.error('❌ Connection failed:', err.message));
+  .then(res => console.log('ShaktiDB connected:', res.rows[0]))
+  .catch(err => console.error('Connection failed:', err.message));
 
 module.exports = pool;
